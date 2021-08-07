@@ -1,0 +1,27 @@
+.my-container{
+    background-color: #5AF;
+}
+
+.row{
+    height: 33.33%;
+    border: 1px solid #000;
+}
+
+.my-block{
+    height: 150px;
+}
+
+.my-block-1{
+    background-color: #003;
+    color: #FFF;
+}
+
+.my-block-2{
+    background-color: #005;
+    color: #0F0;
+}
+
+.my-block-3{
+    background-color: #05A;
+    color: #000;
+}
