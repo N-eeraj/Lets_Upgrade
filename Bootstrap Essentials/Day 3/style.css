@@ -1,0 +1,129 @@
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.navbar{
+    background-color: #333A;
+    box-shadow: 0 5px 7px #FFF3;
+    backdrop-filter: blur(10px);
+}
+
+.banner{
+    height: 90vh;
+    background-image: url("https://wallpaperaccess.com/full/4546114.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.dark-overlay{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #000A;
+}
+
+.banner-content{
+    width: auto;
+    padding: 3%;
+    background-color: #FFF9;
+}
+
+.quote{
+    font-weight: 600;
+}
+.quote::before{
+    content: "❝";
+}
+.quote::after{
+    content: "❞";
+}
+
+.by{
+    font-weight: bolder;
+    margin-left: 80%;
+}
+.by::before{
+    content: "-";
+}
+
+.mc-container{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.card{
+    margin: 3vw;
+    padding: 0;
+    box-shadow: 0 0 10px 3px #252525;
+    transition: 500ms;
+}
+.card:hover{
+    box-shadow: 0 7px 10px 5px #222;
+    transform: translateY(-5px) scale(1.025);
+}
+
+
+.nimbus{
+    width: 30vw;
+    height: 25vh;
+    position: absolute;
+    background-image: url("https://64.media.tumblr.com/0d738962a583142228f71caa284761b2/tumblr_mu6izgpsK91sug5ooo1_1280.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: nimbus-fly;
+    animation-duration: 15s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    z-index: 3;
+}
+
+@keyframes nimbus-fly {
+    0%{
+        top: -5%;
+        right: -100%;
+    }
+    10%{
+        top: 10%;
+        right: 10%;
+    }
+    20%{
+        top: 20%;
+        right: 35%;
+    }
+    30%{
+        top: 35%;
+        right: 5%;
+    }
+    40%{
+        top: 75%;
+        right: 45%;
+    }
+    50%{
+        top: 20%;
+        right: 200%;
+        transform: rotateY(0deg);
+    }
+    55%{
+        transform: rotateY(180deg);
+    }
+    60%{
+        top: 30%;
+        right: -50%;
+    }
+    65%{
+        transform: rotateY(0);
+    }
+    66%{
+        top: 65%;
+        right: 30%;
+    }
+    90%{
+        right: 35%;
+    }
+    99%{
+        top: -50%;
+    }
+}
