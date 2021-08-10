@@ -1,0 +1,5 @@
+Interpreter
+Translates program one statement at a time.Interpreters usually take less amount of time to analyze the source code. However, the overall execution time is comparatively slower than compilers.No Object Code is generated, hence are memory efficient. Programming languages like JavaScript, Python, Ruby use interpreters.
+
+Compiler
+Scans the entire program and translates it as a whole into machine code. Compilers usually take a large amount of time to analyze the source code. However, the overall execution time is comparatively faster than interpreters. Generates Object Code which further requires linking, hence requires more memory. Programming languages like C, C++, Java use compilers.
