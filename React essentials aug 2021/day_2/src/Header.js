@@ -7,13 +7,15 @@ function Header()
 
     return(
 
-        <div className="nav-bar">
-            <h1>Logo</h1>
+        <div className="nav-container">
+            <div className="nav-bar">
+                <h1>Logo</h1>
 
-            <div className="nav-links">
-                {
-                    tabs.map((data) => (<Navlink name={data}/>))
-                }
+                <div className="nav-links">
+                    {
+                        tabs.map((data, index) => (<Navlink key={index} name={data}/>))
+                    }
+                </div>
             </div>
         </div>
 

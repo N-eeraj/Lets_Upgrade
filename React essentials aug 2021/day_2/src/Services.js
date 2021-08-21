@@ -48,7 +48,7 @@ function Services()
 
         <div className="services">
             {
-                service_list.map((data) => (<Card title={data.title} img={data.img} sub={data.sub} desc={data.desc}/>))
+                service_list.map((data, index) => (<Card key={index} title={data.title} img={data.img} sub={data.sub} desc={data.desc}/>))
             }
         </div>
 
